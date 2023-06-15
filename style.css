@@ -1,0 +1,97 @@
+/* CSS Variables */
+:root {
+    --main-color: #333;
+    --heading-color: #ff0000;
+    --container-bg: #f0f0f0;
+    --table-bg: #21d7d1fb;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container Styles */
+  .container {
+    width: 600px;
+    height: 400px;
+    background-color: var(--container-bg);
+  }
+  
+  /* Heading Styles */
+  h1 {
+    color: var(--heading-color);
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* List Item Styles */
+  li.special {
+    font-weight: bold;
+  }
+  
+  /* Image Styles */
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--table-bg);
+  }
+  
+  th{
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  td{
+    border: 3px solid #92b509;
+    padding: 10px;
+    
+  }
+  
+  th {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  /* first column */
+  td:first-child {
+    background-color: rgba(210, 139, 8, 0.801);
+  }
+  /* last row */
+  tr:last-child td {
+    background-color: rgba(210, 25, 25, 0.77);
+  }
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Link Styles */
+  a:link {
+    color: blue;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: yellow;
+  }
+  a:visited {
+    color: red;
+  }
+  a:hover{
+    color: blue;
+  }
+  
+  /* Pseudo-element Styles */
+  li.special::before {
+    content: ">> ";
+  }
+  li.special::after {
+    content: "<< ";
+  }
